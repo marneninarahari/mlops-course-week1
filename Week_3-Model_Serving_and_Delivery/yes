@@ -1,0 +1,12 @@
+version = 0.1
+[yes]
+[yes.deploy]
+[yes.deploy.parameters]
+stack_name = "tsla-mn"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-w31d94eu2rd2"
+s3_prefix = "tsla-mn"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["SentimentFunction=864533548014.dkr.ecr.us-west-2.amazonaws.com/tslamn155dcdff/sentimentfunction35d37012repo"]
